@@ -1,0 +1,131 @@
+\documentclass{CR} % 文本环境
+
+\begin{document}
+
+% 封面
+\includepdf[pagecommand={\thispagestyle{empty}}]{episode/FrontPage} 
+\clearpage\thispagestyle{empty}\cleardoublepage
+
+% 标题页
+\input{episode/Titlepage}
+%\bookmark[page=2,level=0]{封页}
+
+% 出版信息页
+\input{episode/Publish Information}
+
+\frontmatter
+
+%目录
+\pagestyle{plain}
+\tableofcontents 
+\clearpage\thispagestyle{empty}\cleardoublepage
+
+\mainmatter
+
+\pagestyle{headings}
+
+%\part[初版序言]{初\quad 版\quad 序\quad 言} % 初版序言 初\quad 版\quad 序\quad 言
+\clearpage\thispagestyle{empty}\cleardoublepage % 单独留出一空白页
+
+\input{episode/introduction}
+
+%\clearpage\thispagestyle{empty}\cleardoublepage % 单独留出一空白页
+%\part[再版序言]{再\quad 版\quad 序\quad 言} % 再版序言
+%\clearpage\thispagestyle{empty}\cleardoublepage
+%\leftskip=0pt % 恢复初始格式设置
+
+\input{episode/intro-again}
+
+\clearpage\thispagestyle{empty}\cleardoublepage
+
+% 第一章 阶级社会和国家
+\part[第一章]{第~一~章 \\ 阶级社会和国家}  
+%\clearpage\thispagestyle{empty}\cleardoublepage
+\leftskip=0pt
+
+\input{episode/one-1} % 国家是阶级矛盾不可调和的产物
+\input{episode/one-2} % 特别的武装队伍，监狱等等
+\input{episode/one-3} % 国家是剥削和被压迫阶级的工具
+\input{episode/one-4} % 国家“消亡”和暴力革命
+
+%\clearpage\thispagestyle{empty}\cleardoublepage
+
+% 第二章 国家与革命 1848-1851年的经验
+\part[第二章]{第~二~章 \\ 国家与革命\\ 1848-1851年的经验}  
+%\clearpage\thispagestyle{empty}\cleardoublepage
+
+\input{episode/two-1} % 革命的前夜
+\input{episode/two-2} % 革命的总结
+\input{episode/two-3} % 1852年马克思对问题的提法 
+
+%\clearpage\thispagestyle{empty}\cleardoublepage
+
+% 第三章 国家与革命 1871年巴黎公社的经验 马克思的分析
+\part[第三章]{第~三~章 \\ 国家与革命\\ 1871年巴黎公社的经验 \\ 马克思的分析}  
+%\clearpage\thispagestyle{empty}\cleardoublepage
+
+\input{episode/three-1} % 公社社员这次尝试的英雄主义何在呢？
+\input{episode/three-2} % 用什么东西来代替被打碎的国家机器呢？
+\input{episode/three-3} % 议会制的消失
+\input{episode/three-4} % 民族统一的建立
+\input{episode/three-5} % 消灭寄生虫式的国家
+
+%\clearpage\thispagestyle{empty}\cleardoublepage
+
+% 第四章 续前 恩格斯的补充说明
+\part[第四章]{第~四~章 \\ 续前\quad 恩格斯的补充说明}  
+%\clearpage\thispagestyle{empty}\cleardoublepage
+
+\input{episode/four-pre}
+\input{episode/four-1} % “住宅问题”
+\input{episode/four-2} % 同无政府主义者的论战
+\input{episode/four-3} % 给倍倍尔的信
+\input{episode/four-4} % 爱尔福特纲领草案批判
+\input{episode/four-5} % 1891年为马克思的“法兰西内战”所写的序言
+\input{episode/four-6} % 恩格斯论民主制的消除
+
+%\clearpage\thispagestyle{empty}\cleardoublepage
+
+% 第五章 国家消亡的经济基础
+\part[第五章]{第~五~章 \\ 国家消亡的经济基础}  
+%\clearpage\thispagestyle{empty}\cleardoublepage
+
+\input{episode/five-pre}
+\input{episode/five-1} % 马克思对这个问题的提法
+\input{episode/five-2} % 从资本主义向共产主义的过度
+\input{episode/five-3} % 共产主义社会的第一阶段
+\input{episode/five-4} % 共产主义社会的高级阶段
+
+%\clearpage\thispagestyle{empty}\cleardoublepage
+
+% 第六章 马克思主义被机会主义者庸俗化了
+\part[第六章]{第~六~章 \\ 马克思主义\\被机会主义者庸俗化了}  
+%\clearpage\thispagestyle{empty}\cleardoublepage
+
+\input{episode/six-pre}
+\input{episode/six-1} % 普列汉诺夫与无政府主义者的论战
+\input{episode/six-2} % 考茨基与机会主义者的论战
+\input{episode/six-3} % 考茨基与潘涅库克的论战
+
+\clearpage\thispagestyle{empty}\cleardoublepage
+
+% 初版跋
+%\part[初版跋]{初版跋}  
+\clearpage\thispagestyle{empty}\cleardoublepage
+
+\input{episode/epilogue}
+
+\clearpage\thispagestyle{empty}\cleardoublepage
+
+ % 注释
+%\part[注释]{注释} 
+
+\input{episode/exegesis}
+
+
+% 后记
+%\clearpage\thispagestyle{empty}\cleardoublepage
+\input{episode/Afterword}
+
+
+\end{document}
